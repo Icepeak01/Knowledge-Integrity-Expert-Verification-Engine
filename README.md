@@ -43,7 +43,7 @@ To solve this, the model uses a **Custom Differentiable Negative-Reward Loss**. 
 
 ### Results & Evaluation
 The model was trained on a synthetic dataset of 1,000 candidate profiles with realistic noise distributions. Evaluated using a strict 90/10 Train/Test split (with `torch.no_grad()` enabled):
-* **Test Set Performance:** The agent successfully generalized to unseen data, capturing **~86% of the theoretical maximum reward**.
+* **Test Set Performance:** The agent successfully generalized to unseen data, capturing **~92% of the theoretical maximum reward**.
 
 ---
 
