@@ -4,6 +4,9 @@ An automated Reinforcement Learning (RL) gatekeeper designed to detect and flag 
 
 This proof-of-concept system evaluates the probability that a candidate is utilizing Large Language Models (LLMs) like ChatGPT to feign technical depth by analyzing historical profile anomalies, verifiable web signals, and the statistical linguistic footprints of their screening answers.
 
+# Notebook Link
+https://colab.research.google.com/drive/1RubSvpaApH-VWAh635Sd7U2El_QqN6WQ?usp=sharing
+
 ---
 
 ## The Problem
