@@ -7,10 +7,10 @@ This proof-of-concept system evaluates the probability that a candidate is utili
 ---
 
 ## The Problem
-In the era of ubiquitous AI, technical hiring faces a new threat. Fraudulent actors leverage tools like ChatGPT to construct highly convincing resumes and perfectly draft screening responses for high-demand engineering roles they never actually held. Passing these fabricated experts through the hiring funnel wastes incredibly expensive senior engineering time during live technical interviews.
+In the era of ubiquitous AI, technical hiring faces a new threat. Fraudulent actors leverage tools like ChatGPT to construct highly convincing resumes and perfectly draft screening responses for high-demand roles they never actually held. Passing these fabricated experts through the hiring funnel wastes incredibly expensive senior engineering time during live technical interviews.
 
 ## The Solution
-This project introduces a custom Reinforcement Learning (RL) agent that acts as an automated filter. Instead of a standard binary classifier, the system uses a custom policy network optimized via an asymmetric reward matrix. The agent aggressively penalizes False Negatives (wasting engineering time on a fraud) while rewarding True Positives.
+This project introduces a custom Reinforcement Learning (RL) agent that acts as an automated filter. Instead of a standard binary classifier, the system uses a custom policy network optimized via an asymmetric reward matrix. The agent aggressively penalizes False Negatives (wasting organization's time and resources on a fraud) while rewarding True Positives.
 
 ### Feature Engineering
 To differentiate AI-assisted fabrication from genuine career growth, the environment extracts a 5-dimensional continuous state space for each candidate:
