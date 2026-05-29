@@ -53,7 +53,7 @@ The next evolution of this model is to deploy it as a real-time "Co-Pilot" durin
 
 ---
 
-## ⚙️ Usage & Installation
+## Usage & Installation
 
 ### Requirements
 * Python 3.8+
