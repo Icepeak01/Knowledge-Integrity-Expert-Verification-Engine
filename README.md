@@ -1,4 +1,4 @@
-# Knowledge Integrity & Expert Verification Engine 🕵️‍♂️🤖
+# Knowledge Integrity & Expert Verification Engine 
 
 An automated Reinforcement Learning (RL) gatekeeper designed to detect and flag "Expertise Fraud" in technical hiring pipelines. 
 
@@ -6,10 +6,10 @@ This proof-of-concept system evaluates the probability that a candidate is utili
 
 ---
 
-## 🛑 The Problem
+## The Problem
 In the era of ubiquitous AI, technical hiring faces a new threat. Fraudulent actors leverage tools like ChatGPT to construct highly convincing resumes and perfectly draft screening responses for high-demand engineering roles they never actually held. Passing these fabricated experts through the hiring funnel wastes incredibly expensive senior engineering time during live technical interviews.
 
-## 💡 The Solution
+## The Solution
 This project introduces a custom Reinforcement Learning (RL) agent that acts as an automated filter. Instead of a standard binary classifier, the system uses a custom policy network optimized via an asymmetric reward matrix. The agent aggressively penalizes False Negatives (wasting engineering time on a fraud) while rewarding True Positives.
 
 ### Feature Engineering
@@ -23,7 +23,7 @@ To differentiate AI-assisted fabrication from genuine career growth, the environ
 
 ---
 
-## 🧠 RL Architecture & Training
+## RL Architecture & Training
 
 ### Custom PyTorch Policy Network
 The agent is built using PyTorch. Because this environment functions as a continuous Contextual Bandit rather than a sequential Markov Decision Process (MDP), standard RL loss algorithms (like basic REINFORCE) lead to gradient collapse. 
@@ -44,7 +44,7 @@ The model was trained on a synthetic dataset of 1,000 candidate profiles with re
 
 ---
 
-## 🚀 Future Scope: Multi-Modal "Live" Evaluator
+## Future Scope: Multi-Modal "Live" Evaluator
 The next evolution of this model is to deploy it as a real-time "Co-Pilot" during live video interviews, shifting from static historical data to time-series streams:
 * **Visual:** Gaze tracking (via MediaPipe) to detect sustained off-camera reading immediately post-question.
 * **Audio:** Measuring millisecond latency between human question end and candidate response start to detect LLM processing delays.
